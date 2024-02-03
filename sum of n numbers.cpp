@@ -12,6 +12,6 @@ int main()
     {
         sum = sum +i;
     }
-    cout<<"The addition of numbers form 1 to "<<n<<" is :"<<sum;
+    cout<<"The addition of numbers from 1 to "<<n<<" is :"<<sum;
     return 0;
 }
