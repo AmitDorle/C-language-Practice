@@ -3,7 +3,7 @@
 int main()
 {
     int arr[10],n;
-    printf("Enter the number of students for array 1:\n");
+    printf("Enter the number of students for array :\n");
     scanf("%d",&n);
     for(int i=1;i<=n;i++)
     {
