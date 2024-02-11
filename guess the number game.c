@@ -1,8 +1,9 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-int guess()
+int main()
 {
-    int a=10;
+    int a=rand();
     int guess;
     do
     {
@@ -20,23 +21,17 @@ int guess()
         {
             printf("You enter large number plz enter small number\n");
         }
-    } while (guess!=a); 
+    } while (guess!=a);
     int opi;
     printf("\nDo you want to continue yes(1) and no(0)\n");
     scanf("%d",&opi);
     if(opi==1)
     {
-        guess();
+        main();
     }
     else
     {
         return 0;
     }
-      return 0;
-}
-
-int main()
-{
-    guess();
     return 0;
 }
