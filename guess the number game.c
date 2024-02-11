@@ -21,12 +21,6 @@ int guess()
             printf("You enter large number plz enter small number\n");
         }
     } while (guess!=a); 
-      return 0;
-}
-
-int main()
-{
-    guess();
     int opi;
     printf("\nDo you want to continue yes(1) and no(0)\n");
     scanf("%d",&opi);
@@ -38,5 +32,11 @@ int main()
     {
         return 0;
     }
+      return 0;
+}
+
+int main()
+{
+    guess();
     return 0;
 }
