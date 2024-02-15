@@ -20,16 +20,34 @@
 
 
 // PROGRAM 3
+// int main()
+// {
+//     int a=10;
+//     float c=1.4;
+//     char ch='a';
+//     double b=20;
+//     printf("%d\n",a);
+//     printf("%f\n",c);
+//     printf("%c\n",ch);
+//     printf("%lf\n",b);
+
+//     return 0;
+// }
+
+
+// PROGRAM 4
 int main()
 {
-    int a=10;
-    float c=1.4;
-    char ch='a';
-    double b=20;
-    printf("%d\n",a);
-    printf("%f\n",c);
-    printf("%c\n",ch);
-    printf("%lf\n",b);
-
+    int a;
+    printf("Enter any number:\n");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("The number is even\n");
+    }
+    else
+    {
+        printf("The number is odd");
+    }
     return 0;
 }
