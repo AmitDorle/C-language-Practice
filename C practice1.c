@@ -133,15 +133,46 @@
 
 
 // PROGRAM 8
+// int main()
+// {
+//     for(int i=1;i<=10;i++)
+//     {
+//         for(int j=1;j<=10;j++)
+//         {
+//             printf("%d\t",i*j);
+//         }
+//          printf("\n");
+//     }
+//     return 0;
+// }
+
+
+// PROGRAM 9
+struct Student
+{
+    int age;
+    int rollno;
+};
+
+
 int main()
 {
-    for(int i=1;i<=10;i++)
+    struct Student Stu[5];
+    int a;
+    printf("\nEnter number of students\n");
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++)
     {
-        for(int j=1;j<=10;j++)
-        {
-            printf("%d\t",i*j);
-        }
-         printf("\n");
+        printf("\nEnter age of student %d\n",i);
+        scanf("%d",&Stu[i].age);
+        printf("\nEnter rollno of student %d\n",i);
+        scanf("%d",&Stu[i].rollno);
+    }
+    printf("\nAge\trollno\n");
+
+    for(int i=1;i<=a;i++)
+    {
+        printf("%d\t%d\n",Stu[i].age,Stu[i].rollno);
     }
     return 0;
 }
