@@ -106,14 +106,27 @@
 
 
 // PROGRAM 6
+// int main()
+// {
+//     int a=1;
+//     while(a<=10)
+//     {
+//         printf("%d\n",a);
+//         a++;
+//     }
+
+//     return 0;
+// }
+
+
+// PROGRAM 7
 int main()
 {
-    int a=1;
-    while(a<=10)
+    int i=1;
+    do
     {
-        printf("%d\n",a);
-        a++;
-    }
-
+        printf("%d\n",i);
+        i++;
+    }while(i<=10);
     return 0;
 }
