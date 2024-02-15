@@ -120,13 +120,28 @@
 
 
 // PROGRAM 7
+// int main()
+// {
+//     int i=1;
+//     do
+//     {
+//         printf("%d\n",i);
+//         i++;
+//     }while(i<=10);
+//     return 0;
+// }
+
+
+// PROGRAM 8
 int main()
 {
-    int i=1;
-    do
+    for(int i=1;i<=10;i++)
     {
-        printf("%d\n",i);
-        i++;
-    }while(i<=10);
+        for(int j=1;j<=10;j++)
+        {
+            printf("%d\t",i*j);
+        }
+         printf("\n");
+    }
     return 0;
 }
