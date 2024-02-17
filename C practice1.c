@@ -267,6 +267,37 @@
 
 
 // PROGRAM 13
+// int main()
+// {
+//     int arr[10];
+//     int n;
+//     printf("Enter number of Students for storing marks:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("The array is\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
+//     int min=arr[1];
+//     int temp;
+//     for(int i=1;i<=n;i++)
+//     {
+//         if(min<arr[i])
+//         {
+//             temp=min;
+//             min = arr[i];
+//             arr[i]=min;
+//         }
+//     }
+//     printf("The minimum number is %d",min);
+// }
+
+
+// PROGRAM 14
 int main()
 {
     int arr[10];
@@ -282,16 +313,16 @@ int main()
     {
         printf("%d\t",arr[i]);
     }
-    int max=arr[1];
+    int min=arr[1];
     int temp;
     for(int i=1;i<=n;i++)
     {
-        if(max<arr[i])
+        if(min>arr[i])
         {
-            temp=max;
-            max = arr[i];
-            arr[i]=max;
+            temp=min;
+            min = arr[i];
+            arr[i]=min;
         }
     }
-    printf("The maximum number is %d",max);
+    printf("The minimum number is %d",min);
 }
