@@ -178,21 +178,58 @@
 
 
 // PROGRAM 10
-int main()
-{
-    int arr[5];
-    int n;
-    printf("Enter number of Students for storing marks:\n");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
-    {
-        scanf("%d",&arr[i]);
-    }
-    printf("The array is\n");
-    for(int i=1;i<=n;i++)
-    {
-        printf("%d\t",arr[i]);
-    }
+// int main()
+// {
+//     int arr[5];
+//     int n;
+//     printf("Enter number of Students for storing marks:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("The array is\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+// PROGRAM 11
+// int main()
+// {
+//     int arr[10];
+//     int n;
+//     printf("Enter number of Students for storing marks:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("The array is\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
+
+//     int posi,number;
+//     printf("\nEnter the position and number which you want to insert:\n");
+//     scanf("%d",&posi);
+//     scanf("%d",&number);
+//     for(int i=n+1;i>=posi-1;i--)
+//     {
+//         arr[i+1]=arr[i];
+//     }
+//     arr[posi]=number;
+//     printf("The array after insertion is:\n");
+//     for(int i=1;i<=n+1;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
+//     return 0;
+// }
+
+
