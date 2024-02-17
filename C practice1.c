@@ -233,3 +233,34 @@
 // }
 
 
+// PROGRAM 12
+int main()
+{
+    int arr[10];
+    int n;
+    printf("Enter number of Students for storing marks:\n");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("The array is\n");
+    for(int i=1;i<=n;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+
+    int posi;
+    printf("\nEnter the position where you want to delete:\n");
+    scanf("%d",&posi);
+    for(int i=posi;i<n;i++)
+    {
+        arr[i]=arr[i+1];
+    }
+    printf("The array after deletion is:\n");
+    for(int i=1;i<n;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+    return 0;
+}
