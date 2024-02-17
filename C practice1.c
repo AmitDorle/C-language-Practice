@@ -148,31 +148,51 @@
 
 
 // PROGRAM 9
-struct Student
-{
-    int age;
-    int rollno;
-};
+// struct Student
+// {
+//     int age;
+//     int rollno;
+// };
+
+// int main()
+// {
+//     struct Student Stu[5];
+//     int a;
+//     printf("\nEnter number of students\n");
+//     scanf("%d",&a);
+//     for(int i=1;i<=a;i++)
+//     {
+//         printf("\nEnter age of student %d\n",i);
+//         scanf("%d",&Stu[i].age);
+//         printf("\nEnter rollno of student %d\n",i);
+//         scanf("%d",&Stu[i].rollno);
+//     }
+//     printf("\nAge\trollno\n");
+
+//     for(int i=1;i<=a;i++)
+//     {
+//         printf("%d\t%d\n",Stu[i].age,Stu[i].rollno);
+//     }
+//     return 0;
+// }
 
 
+// PROGRAM 10
 int main()
 {
-    struct Student Stu[5];
-    int a;
-    printf("\nEnter number of students\n");
-    scanf("%d",&a);
-    for(int i=1;i<=a;i++)
+    int arr[5];
+    int n;
+    printf("Enter number of Students for storing marks:\n");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
     {
-        printf("\nEnter age of student %d\n",i);
-        scanf("%d",&Stu[i].age);
-        printf("\nEnter rollno of student %d\n",i);
-        scanf("%d",&Stu[i].rollno);
+        scanf("%d",&arr[i]);
     }
-    printf("\nAge\trollno\n");
+    printf("The array is\n");
+    for(int i=1;i<=n;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
 
-    for(int i=1;i<=a;i++)
-    {
-        printf("%d\t%d\n",Stu[i].age,Stu[i].rollno);
-    }
     return 0;
 }
