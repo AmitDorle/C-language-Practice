@@ -363,39 +363,88 @@
 
 
 // PROGRAM 16
+// int main()
+// {
+//     int arr[10];
+//     int n;
+//     printf("Enter number of Subjects for storing marks:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("The array is\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
+
+//     for(int i=1;i<=n;i++)
+//     {
+//         for(int j=i+1;j<=n;j++)
+//         {
+//             if(arr[i]>arr[j])
+//             {
+//                 int temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+//     printf("\nThe array is ascending order is:\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
+
+//     return 0;
+// }
+
+
+// PROGRAM 17
 int main()
 {
-    int arr[10];
+    int arr1[10];
     int n;
-    printf("Enter number of Subjects for storing marks:\n");
+    printf("Enter number of Subjects for storing marks of student 1:\n");
     scanf("%d",&n);
     for(int i=1;i<=n;i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",&arr1[i]);
     }
     printf("The array is\n");
     for(int i=1;i<=n;i++)
     {
-        printf("%d\t",arr[i]);
+        printf("%d\t",arr1[i]);
     }
 
-    for(int i=1;i<=n;i++)
+    int arr2[10];
+    int m;
+    printf("\nEnter number of Subjects for storing marks of student 2:\n");
+    scanf("%d",&m);
+    for(int i=1;i<=m;i++)
     {
-        for(int j=i+1;j<=n;j++)
-        {
-            if(arr[i]>arr[j])
-            {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
+        scanf("%d",&arr2[i]);
     }
-    printf("\nThe array is ascending order is:\n");
-    for(int i=1;i<=n;i++)
+    printf("The array is\n");
+    for(int i=1;i<=m;i++)
     {
-        printf("%d\t",arr[i]);
+        printf("%d\t",arr2[i]);
     }
 
+    int concat[50];
+    for(int i=1;i<=n;i++)
+    {
+        concat[i]=arr1[i];
+    }
+    for(int i=1;i<=n;i++)
+    {
+        concat[n+i]=arr2[i];
+    }
+    printf("\nThe array after concatenation is:\n");
+    for(int i=1;i<=n+m;i++)
+    {
+        printf("%d\t",concat[i]);
+    }
     return 0;
 }
