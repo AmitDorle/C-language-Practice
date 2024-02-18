@@ -158,7 +158,7 @@
 // {
 //     struct Student Stu[5];
 //     int a;
-//     printf("\nEnter number of students\n");
+//     printf("\nEnter number of Subjects\n");
 //     scanf("%d",&a);
 //     for(int i=1;i<=a;i++)
 //     {
@@ -182,7 +182,7 @@
 // {
 //     int arr[5];
 //     int n;
-//     printf("Enter number of Students for storing marks:\n");
+//     printf("Enter number of Subjects for storing marks:\n");
 //     scanf("%d",&n);
 //     for(int i=1;i<=n;i++)
 //     {
@@ -203,7 +203,7 @@
 // {
 //     int arr[10];
 //     int n;
-//     printf("Enter number of Students for storing marks:\n");
+//     printf("Enter number of Subjects for storing marks:\n");
 //     scanf("%d",&n);
 //     for(int i=1;i<=n;i++)
 //     {
@@ -238,7 +238,7 @@
 // {
 //     int arr[10];
 //     int n;
-//     printf("Enter number of Students for storing marks:\n");
+//     printf("Enter number of Subjects for storing marks:\n");
 //     scanf("%d",&n);
 //     for(int i=1;i<=n;i++)
 //     {
@@ -271,7 +271,7 @@
 // {
 //     int arr[10];
 //     int n;
-//     printf("Enter number of Students for storing marks:\n");
+//     printf("Enter number of Subjects for storing marks:\n");
 //     scanf("%d",&n);
 //     for(int i=1;i<=n;i++)
 //     {
@@ -300,7 +300,7 @@
 // {
 //     int arr[10];
 //     int n;
-//     printf("Enter number of Students for storing marks:\n");
+//     printf("Enter number of Subjects for storing marks:\n");
 //     scanf("%d",&n);
 //     for(int i=1;i<=n;i++)
 //     {
@@ -319,5 +319,44 @@
 //             min = arr[i];
 //         }
 //     }
-//     printf("The maximum number is %d",min);
+//     printf("The minimum number is %d",min);
 // }
+
+
+// PROGRAM 15
+int main()
+{
+    int arr[10];
+    int n;
+    printf("Enter number of Subjects for storing marks:\n");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("The array is\n");
+    for(int i=1;i<=n;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=i+1;j<=n;j++)
+        {
+            if(arr[i]<arr[j])
+            {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    printf("\nThe array is ascending order is:\n");
+    for(int i=1;i<=n;i++)
+    {
+        printf("%d\t",arr[i]);
+    }
+
+    return 0;
+}
