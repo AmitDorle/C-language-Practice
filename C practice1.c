@@ -324,6 +324,45 @@
 
 
 // PROGRAM 15
+// int main()
+// {
+//     int arr[10];
+//     int n;
+//     printf("Enter number of Subjects for storing marks:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("The array is\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
+
+//     for(int i=1;i<=n;i++)
+//     {
+//         for(int j=i+1;j<=n;j++)
+//         {
+//             if(arr[i]<arr[j])
+//             {
+//                 int temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+//     printf("\nThe array is decending order is:\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr[i]);
+//     }
+
+//     return 0;
+// }
+
+
+// PROGRAM 16
 int main()
 {
     int arr[10];
@@ -344,7 +383,7 @@ int main()
     {
         for(int j=i+1;j<=n;j++)
         {
-            if(arr[i]<arr[j])
+            if(arr[i]>arr[j])
             {
                 int temp = arr[i];
                 arr[i] = arr[j];
