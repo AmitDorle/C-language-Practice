@@ -402,49 +402,65 @@
 
 
 // PROGRAM 17
+// int main()
+// {
+//     int arr1[10];
+//     int n;
+//     printf("Enter number of Subjects for storing marks of student 1:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         scanf("%d",&arr1[i]);
+//     }
+//     printf("The array is\n");
+//     for(int i=1;i<=n;i++)
+//     {
+//         printf("%d\t",arr1[i]);
+//     }
+
+//     int arr2[10];
+//     int m;
+//     printf("\nEnter number of Subjects for storing marks of student 2:\n");
+//     scanf("%d",&m);
+//     for(int i=1;i<=m;i++)
+//     {
+//         scanf("%d",&arr2[i]);
+//     }
+//     printf("The array is\n");
+//     for(int i=1;i<=m;i++)
+//     {
+//         printf("%d\t",arr2[i]);
+//     }
+
+//     int concat[50];
+//     for(int i=1;i<=n;i++)
+//     {
+//         concat[i]=arr1[i];
+//     }
+//     for(int i=1;i<=n;i++)
+//     {
+//         concat[n+i]=arr2[i];
+//     }
+//     printf("\nThe array after concatenation is:\n");
+//     for(int i=1;i<=n+m;i++)
+//     {
+//         printf("%d\t",concat[i]);
+//     }
+//     return 0;
+// }
+
+
+// PROGRAM 18
 int main()
 {
-    int arr1[10];
+    int fact=1;
     int n;
-    printf("Enter number of Subjects for storing marks of student 1:\n");
+    printf("Enter the number for which you want factorial:\n");
     scanf("%d",&n);
     for(int i=1;i<=n;i++)
     {
-        scanf("%d",&arr1[i]);
+        fact = fact*i;
     }
-    printf("The array is\n");
-    for(int i=1;i<=n;i++)
-    {
-        printf("%d\t",arr1[i]);
-    }
-
-    int arr2[10];
-    int m;
-    printf("\nEnter number of Subjects for storing marks of student 2:\n");
-    scanf("%d",&m);
-    for(int i=1;i<=m;i++)
-    {
-        scanf("%d",&arr2[i]);
-    }
-    printf("The array is\n");
-    for(int i=1;i<=m;i++)
-    {
-        printf("%d\t",arr2[i]);
-    }
-
-    int concat[50];
-    for(int i=1;i<=n;i++)
-    {
-        concat[i]=arr1[i];
-    }
-    for(int i=1;i<=n;i++)
-    {
-        concat[n+i]=arr2[i];
-    }
-    printf("\nThe array after concatenation is:\n");
-    for(int i=1;i<=n+m;i++)
-    {
-        printf("%d\t",concat[i]);
-    }
+    printf("\nThe factorial of %d is %d",n,fact);
     return 0;
 }
