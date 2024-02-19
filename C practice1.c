@@ -451,16 +451,32 @@
 
 
 // PROGRAM 18
+// int main()
+// {
+//     int fact=1;
+//     int n;
+//     printf("Enter the number for which you want factorial:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         fact = fact*i;
+//     }
+//     printf("\nThe factorial of %d is %d",n,fact);
+//     return 0;
+// }
+
+
+// PROGRAM 19
 int main()
 {
-    int fact=1;
     int n;
-    printf("Enter the number for which you want factorial:\n");
+    printf("Enter the number upto which you want addition:\n");
     scanf("%d",&n);
+    int sum=0;
     for(int i=1;i<=n;i++)
     {
-        fact = fact*i;
+        sum = sum + i;
     }
-    printf("\nThe factorial of %d is %d",n,fact);
+    printf("\nThe sum of all numbers upto %d is %d",n,sum);
     return 0;
 }
