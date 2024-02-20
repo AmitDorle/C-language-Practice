@@ -467,16 +467,33 @@
 
 
 // PROGRAM 19
+// int main()
+// {
+//     int n;
+//     printf("Enter the number upto which you want addition:\n");
+//     scanf("%d",&n);
+//     int sum=0;
+//     for(int i=1;i<=n;i++)
+//     {
+//         sum = sum + i;
+//     }
+//     printf("\nThe sum of all numbers upto %d is %d",n,sum);
+//     return 0;
+// }
+
+
+// PROGRAM 20
 int main()
 {
     int n;
-    printf("Enter the number upto which you want addition:\n");
+    printf("Enter the number upto which you want to print odd numbers:\n");
     scanf("%d",&n);
-    int sum=0;
     for(int i=1;i<=n;i++)
     {
-        sum = sum + i;
+        if(i%2!=0)
+        {
+            printf("%d\n",i);
+        }
     }
-    printf("\nThe sum of all numbers upto %d is %d",n,sum);
     return 0;
 }
