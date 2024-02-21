@@ -483,17 +483,17 @@
 
 
 // PROGRAM 20
-int main()
-{
-    int n;
-    printf("Enter the number upto which you want to print odd numbers:\n");
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
-    {
-        if(i%2!=0)
-        {
-            printf("%d\n",i);
-        }
-    }
-    return 0;
-}
+// int main()
+// {
+//     int n;
+//     printf("Enter the number upto which you want to print odd numbers:\n");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++)
+//     {
+//         if(i%2!=0)
+//         {
+//             printf("%d\n",i);
+//         }
+//     }
+//     return 0;
+// }
