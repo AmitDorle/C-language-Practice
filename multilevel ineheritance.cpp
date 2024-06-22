@@ -8,7 +8,7 @@ class School
     int a=20;
 };
 
-class Teacher:public School
+class Teacher
 {
     public:
     int b=20;

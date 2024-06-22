@@ -4,7 +4,7 @@ using namespace std;
 class School
 {
     public:
-    int a=5;
+    int a=10;
 };
 class Teacher
 {
